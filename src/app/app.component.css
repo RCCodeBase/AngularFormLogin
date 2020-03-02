@@ -1,0 +1,27 @@
+
+.navbar{
+    background-color: #3f51b5;
+    border: none;
+    transition: 0.2s;
+    color: whitesmoke;
+    border-color: #e7e7e7;
+  }
+  .nav-link
+  {
+      color: whitesmoke;
+      font-size: 14px;
+  }
+
+
+  .nav-opt
+{
+  color: whitesmoke;
+  font-size: 16px;
+  background-color: #3f51b5;
+  border:none;
+}
+.nav-opt:hover, .nav-opt:focus{
+  border:none;
+  box-shadow: 0 0 0 .2rem #3f51b5;
+
+}

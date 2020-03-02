@@ -1,0 +1,18 @@
+<form class="DataSend" #userRegForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+    <div *ngIf="ifError" class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ errorMessage }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="form-group">
+        <label for="exampleInputTitle">Title</label>
+        <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp"
+            placeholder="Enter Title" name = "heading" [(ngModel)]="PostData.heading">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputContent">Title Content</label>
+        <textarea class="form-control" rows="5" id="content" placeholder="Enter Content" name = "content" [(ngModel)]="PostData.content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">SendData</button>
+</form>
